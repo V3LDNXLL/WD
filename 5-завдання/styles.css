@@ -1,0 +1,57 @@
+.content-container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.heading-primary, .heading-secondary {
+    text-align: center;
+}
+
+.list-unstyled, .list-decimal, .list-alpha, .list-roman {
+    margin-bottom: 20px;
+}
+
+.list-circle {
+    list-style-type: circle;
+}
+
+.list-square {
+    list-style-type: square;
+}
+
+.list-image {
+    list-style-type: none;
+}
+
+.list-image-item img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.list-decimal {
+    list-style-type: decimal;
+}
+
+.list-roman {
+    list-style-type: lower-roman;
+}
+
+.list-alpha {
+    list-style-type: lower-alpha;
+}
+
+.list-nested {
+    margin-left: 20px;
+}
+
+.definition-list {
+    margin-bottom: 20px;
+}
+
+.term {
+    font-weight: bold;
+}
+
+.description {
+    margin-left: 20px;
+}

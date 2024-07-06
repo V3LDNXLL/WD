@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анімація</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .animated-text {
+            font-size: 24px;
+            color: #4CAF50;
+            animation: move 4s linear infinite;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+        }
+
+        marquee {
+            font-size: 24px;
+            color: #ff5722;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Анімація</h1>
+
+<p class="animated-text">Цей текст рухається горизонтально через CSS анімацію</p>
+
+<marquee behavior="scroll" direction="left">Цей текст рухається вліво (marquee)</marquee>
+<marquee behavior="scroll" direction="right">Цей текст рухається вправо (marquee)</marquee>
+
+</body>
+</html>

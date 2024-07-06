@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопки</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 20px 0 15px;
+            text-transform: uppercase;
+            color: #4CAF50;
+        }
+
+        .styled-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .styled-button:hover {
+            background-color: #45a049;
+        }
+
+        .genButton {
+            width: 200px;
+            height: 48px;
+            font-size: 20px;
+            color: #ffffff;
+            background: linear-gradient(to top right, #1dd862, #01af1b);
+            border: 2px solid #006c29;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 48px;
+            text-decoration: none;
+        }
+
+        .genButton:hover {
+            color: #ffffff;
+            background: linear-gradient(to top right, #01af1b, #1dd862);
+            border-color: #006c29;
+        }
+    </style>
+</head>
+<body>
+<h1>Мої веб-роботи</h1>
+
+<button class="styled-button" onclick="location.href='https://google.com'">Перейти на Google</button>
+
+<h2>Особливі кнопки</h2>
+<button class="genButton" onclick="location.href='https://google.com'">Почати пошук</button>
+
+</body>
+</html>

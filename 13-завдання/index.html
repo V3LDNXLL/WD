@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклади мультимедіа та графіки</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        video, audio {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        #map {
+            position: relative;
+            margin: 20px auto;
+            width: 200px;
+        }
+
+        #map img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #map .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        canvas {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #555;
+        }
+
+        #svg-container {
+            margin: 20px auto;
+            width: 300px;
+            height: 150px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<h2>Відео та аудіо:</h2>
+<video controls>
+    <source src="resources/video.mp4" type="video/mp4">
+    Ваш браузер не підтримує відео тег.
+</video>
+
+<h2>Фонове відео:</h2>
+<video autoplay muted loop id="background-video">
+    <source src="resources/background-video.mp4" type="video/mp4">
+    Ваш браузер не підтримує відео тег.
+</video>
+
+<h2>Звуковий файл:</h2>
+<audio controls>
+    <source src="resources/music.m4a" type="audio/mpeg">
+    Ваш браузер не підтримує аудіо тег.
+</audio>
+
+<h2>Карта з посиланнями:</h2>
+<div id="map">
+    <img src="resources/smile.png" width="200px" height="200px" alt="Карта" usemap="#image-map">
+    <map name="image-map">
+        <area shape="rect" coords="0,0,100,100" href="top-left.html" alt="Верх ліворуч">
+        <area shape="rect" coords="100,0,200,100" href="top-right.html" alt="Верх праворуч">
+        <area shape="rect" coords="0,100,100,200" href="bottom-left.html" alt="Низ ліворуч">
+        <area shape="rect" coords="100,100,200,200" href="bottom-right.html" alt="Низ праворуч">
+    </map>
+</div>
+
+<h2>Canvas у JavaScript:</h2>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<h2>SVG:</h2>
+<div id="svg-container">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="green" />
+    </svg>
+</div>
+
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'yellow';
+    ctx.fillRect(10, 10, 150, 80);
+
+    var svgContainer = document.getElementById('svg-container');
+    var svgNS = 'http://www.w3.org/2000/svg';
+    var circle = document.createElementNS(svgNS, 'circle');
+    circle.setAttribute('cx', 50);
+    circle.setAttribute('cy', 50);
+    circle.setAttribute('r', 30);
+    circle.setAttribute('fill', 'blue');
+    svgContainer.appendChild(circle);
+</script>
+</body>
+</html>

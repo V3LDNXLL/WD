@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 20px;
+        }
+
+        .custom-block {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .custom-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .orange-block {
+            background-color: #ffd8b7;
+        }
+
+        .green-block {
+            background-color: #c2f0c2;
+        }
+
+        .purple-block {
+            background-color: #c2c2f0;
+        }
+
+        .custom-block p {
+            margin: 0;
+            line-height: 1.6;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<h1>Практична №11</h1>
+
+<div class="container">
+    <div class="custom-block orange-block">
+        <p>Це перший блок</p>
+    </div>
+
+    <div class="custom-block green-block">
+        <p>Це другий блок</p>
+    </div>
+
+    <div class="custom-block purple-block">
+        <p>Це третій блок</p>
+    </div>
+</div>
+
+</body>
+</html>
